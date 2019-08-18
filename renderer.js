@@ -1,12 +1,12 @@
 // This file is required by the index.html file and will
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
-const fs = require('fs')
-const marked = require('marked')
-const hljs = require('highlight.js')
-const remote = require('electron').remote
+const fs = window.require('fs')
+const marked = window.require('marked')
+const hljs = window.require('highlight.js')
+const remote = window.require('electron').remote
 
-const { dialog } = require('electron').remote
+const { dialog } = window.require('electron').remote
 
 const readFile = (file) => {
   fs.readFile(file, (err, data) => {

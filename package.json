@@ -4,6 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
+    "browserfy": "browserify --no-builtins --no-commondir --insert-global-vars=\"global\" main.js",
     "start": "electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
@@ -20,7 +21,8 @@
     "electron": "^6.0.2"
   },
   "dependencies": {
-    "highlight": "^0.2.4",
+    "browserfy": "^1.0.0",
+    "highlight.js": "^9.12.0",
     "marked": "^0.7.0"
   }
 }
