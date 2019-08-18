@@ -1,5 +1,5 @@
 {
-  "name": "electron-quick-start",
+  "name": "Electron-Markdown",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
@@ -11,12 +11,16 @@
     "Electron",
     "quick",
     "start",
-    "tutorial",
+    "markdown",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Thomas Doyle",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^6.0.2"
+  },
+  "dependencies": {
+    "highlight": "^0.2.4",
+    "marked": "^0.7.0"
   }
 }
